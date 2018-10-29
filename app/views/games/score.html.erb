@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Result</h1>
+
+  <%if @valid_letters == false%>
+    <h2><%= "Sorry, but #{@word.upcase} can't be built out of #{@letters.join(', ')}."%></h2>
+  <%elsif @valid_word == false%>
+    <h2><%= "Sorry, but #{@word.upcase} is not a valid English word."%></h2>
+  <%else%>
+    <h2><%= "Congratulations! #{@word.upcase} is a valid english word!" %></h2>
+  <%end%>
+  <!-- <p><%= @answer%></p> -->
+  <br>
+  <h4><%= link_to 'Play again!', '/new' %></h4>
+</div>

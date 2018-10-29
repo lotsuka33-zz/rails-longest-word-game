@@ -1,0 +1,61 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  font-family: 'Kanit', sans-serif;
+}
+
+.list-inline {
+  // display: inline;
+  display: flex;
+}
+
+.letter {
+  height: 64px;
+  width: 64px;
+  background-color: #64638f;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px gray;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container #user-word {
+  width: 30%;
+  font-size: 24px;
+  // height: 100%;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+  margin: 0;
+  border-width: thin;
+  border-style: solid;
+  padding: 0 5px;
+  border-color: gray;
+}
+
+.container #btn-word {
+  background-color: white;
+  color: #64638f;
+  font-size: 24px;
+  border-style: solid;
+  height: auto;
+  margin: 0;
+  border-radius: 0 5px 5px 0;
+  border-width: thin;
+  padding: 0 6px;
+  border-color: gray;
+}
+
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}

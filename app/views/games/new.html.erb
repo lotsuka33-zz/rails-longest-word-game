@@ -1,0 +1,23 @@
+<!-- <h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+ -->
+
+<div class="container">
+  <h1>New Game</h1>
+
+  <div class="list-inline">
+    <% @letters.each do |letter| %>
+      <div class="letter">
+        <h3><%= letter[0] %></h3>
+      </div>
+    <% end %>
+  </div>
+
+  <form action="/score" method="post" id="word">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token%>
+    <%= hidden_field_tag :letters, @letters%>
+    <% params[:letter] = @letters %>
+    <h2>What is the longest word you can find?</h2>
+    <input type="text" name="word" placeholder="Give your best shot!" id="user-word"><input type="submit" value="Play" id="btn-word">
+  </form>
+</div>
